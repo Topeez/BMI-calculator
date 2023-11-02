@@ -1,5 +1,5 @@
 :root {
-  --gradient: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(9,9,121,0.804359243697479) 40%, rgba(0,212,255,0.8) 100%);
+  --gradient: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(0,212,255,0.8) 100%);
 }
 
 * {
