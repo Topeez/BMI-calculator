@@ -2,7 +2,7 @@ const vek = document.getElementById("vek");
 const vyska = document.getElementById("vyska");
 const vaha = document.getElementById("vaha");
 const vysledekBtn = document.getElementById("calc");
-const loader = document.querySelector(".loader-wrapper);
+const loader = document.querySelector(".loader-wrapper");
 
 let vysledek = document.getElementById("vysledek");
 
