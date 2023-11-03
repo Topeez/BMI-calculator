@@ -2,6 +2,7 @@ const vek = document.getElementById("vek");
 const vyska = document.getElementById("vyska");
 const vaha = document.getElementById("vaha");
 const vysledekBtn = document.getElementById("calc");
+const loader = document.querySelector(".loader-wrapper);
 
 let vysledek = document.getElementById("vysledek");
 
@@ -42,4 +43,17 @@ document.body.addEventListener('keyup', (event) => {
   if(event.key === 'Enter') {
     vypocitejBMI();
   }
+});
+
+window.addEventListener('load', () => {
+  let opacity = 1;
+  const fadeOutInterval = setInterval(() => {
+    if (opacity <= 0) {
+      clearInterval(fadeOutInterval);
+      loader.style.display = "none";
+    } else {
+      opacity -= 0.02;
+      loader.style.opacity = opacity;
+    }
+  }, 20);
 });
