@@ -1,10 +1,12 @@
+
 const vek = document.getElementById("vek");
 const vyska = document.getElementById("vyska");
 const vaha = document.getElementById("vaha");
 const vysledekBtn = document.getElementById("calc");
-const loader = document.querySelector(".loader-wrapper");
 
 let vysledek = document.getElementById("vysledek");
+
+const loader = document.querySelector('.loader-wrapper');
 
 const vypocitejBMI = () => {
   const vyskaCM = parseFloat(vyska.value);  
